@@ -1,0 +1,6 @@
+1、SQLAlchemy session的autocommit autoflush详解： https://www.jianshu.com/p/b219c3dd4d1e
+2、SQLAlchemy 筛选操作
+    # 大小查询
+    # https://www.cnblogs.com/lmh001/p/9959412.html
+    # 排序
+    # https://blog.csdn.net/memory_qianxiao/article/details/83590396

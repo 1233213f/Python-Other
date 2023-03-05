@@ -1,0 +1,8 @@
+Wed, 17 Mar 2021 23:17:02 connectionpool.py[line:227] DEBUG Starting new HTTP connection (1): www.qq.com:80
+Wed, 17 Mar 2021 23:17:02 connectionpool.py[line:452] DEBUG http://www.qq.com:80 "GET / HTTP/1.1" 302 149
+Wed, 17 Mar 2021 23:17:02 connectionpool.py[line:971] DEBUG Starting new HTTPS connection (1): www.qq.com:443
+Wed, 17 Mar 2021 23:17:03 connectionpool.py[line:452] DEBUG https://www.qq.com:443 "GET / HTTP/1.1" 200 None
+Wed, 17 Mar 2021 23:17:04 6.py[line:19] DEBUG <Response [200]>
+Wed, 17 Mar 2021 23:17:04 connectionpool.py[line:452] DEBUG http://www.qq.com:80 "GET / HTTP/1.1" 302 149
+Wed, 17 Mar 2021 23:17:04 connectionpool.py[line:452] DEBUG https://www.qq.com:443 "GET / HTTP/1.1" 200 None
+Wed, 17 Mar 2021 23:17:14 6.py[line:21] DEBUG <Response [200]>

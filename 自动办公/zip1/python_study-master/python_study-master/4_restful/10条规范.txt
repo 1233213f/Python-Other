@@ -1,0 +1,52 @@
+restful规范
+一 面向资源编程
+每个URL代表一种资源，URL中尽量不要用动词，要用名词。
+
+二 根据method不同，进行不同的操作
+GET/POST/PUT/DELETE/PATCH
+
+** 三 在URL中体现版本**
+https://www.bootcss.com/v1/mycss
+https://v1.bootcss.com/mycss
+
+四 在URL中体现是否是API
+https://www.bootcss.com/api/mycss
+
+** 五 在URL中的过滤条件
+https://www.bootcss.com/v1/mycss？page=3
+
+六 尽量使用HTTPS
+
+七 响应设置状态码
+1** 信息，服务器收到请求，需要请求者继续操作
+2** 成功，操作被成功接收并处理
+3** 重定向，需要进一步的操作以完成请求
+4** 客户端错误，请求包含语法错误或无法完成请求
+5** 服务器错误，服务器在处理请求的过程中发生了错误
+
+八 返回值
+GET请求 返回查到所有或单挑数据
+POST请求 返回新增的数据
+PUT请求 返回更新数据
+PATCH请求 局部更新 返回更新整条数据
+DELETE请求 返回值为空
+
+九 返回错误信息
+返回值携带错误信息
+
+十 Hypermedia API
+如果遇到需要跳转的情况 携带调转接口的URL
+
+ret = {
+    code: 100,
+    data: {
+        id: 1,
+        name: '小明',
+        depart_id: 'http://www.baidu.com/api/v1/depart/4/'
+}
+}
+
+作者：可笑的黑耀斑
+链接：https://www.jianshu.com/p/49209272bdd5
+来源：简书
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
